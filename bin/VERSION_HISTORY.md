@@ -5,6 +5,51 @@ If you run into bugs or other issues let me know in the Overload discord @luponi
 VERSION HISTORY
 
 
+Pyro 0.3.0
+==========
+
+New & Changed Features
+
+  * Bots
+      You can now configure Bots in your Matches. They run directly on the
+      server.
+      To set them up turn on the BOTS option when setting up the match
+      and then go into the ADVANCED SETTINGS
+      and there into the BOTS tab.
+      In there you can add up to 15 bots, set the difficulty, name, weapons of
+      each one.
+      (requires a pyro 0.3.0 or higher server with bots allowed and
+      installed)
+
+      There are two new command line arguments to regulate bot creation on
+      the server side:
+          -no-bots        never run bots on this server
+          -max-bots N     at most N bots per match (default is 8)
+
+  * Advanced match settings
+      Restructured the Advanced match settings into a single menu with less
+      sub menu depth and ordered by category tabs:
+      RULES, TEAMS, POWERUPS, LOADOUTS, BOTS, SERVER.
+
+  * Faster startup
+      Improved Overload start up time by loading multiple assets per frame.
+
+  * Faster level loading
+      Faster loading of non stock levels by reading and buffering bigger
+      chunks at once before reading the individual fields
+
+  * Demos
+      Demos load faster by reading and buffering bigger chunks at once before
+      reading the individual fields
+
+  * Lobby
+      The countdown before the match starts is now 3 seconds instead of 5.
+
+Fixes
+
+  * Fixes the logged joystick curves error on startup of dedicated servers.
+
+
 Pyro 0.2.4
 ==========
 
