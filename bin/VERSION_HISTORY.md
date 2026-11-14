@@ -1,8 +1,20 @@
-Pyro is a opinionated fork of olmod.
+Pyro is an opinionated fork of olmod.
 If you run into bugs or other issues let me know in the Overload discord @luponix
 
 
 VERSION HISTORY
+
+
+Pyro 0.3.1
+==========
+
+New & Changed Features
+
+  * Smaller download size
+      New Releases shrink back from 45MB to ~4MB by no longer including the
+      dependencies for the olbot.
+      The dependencies now get gathered from the Overload install when the
+      server starts its first match with bots.
 
 
 Pyro 0.3.0
