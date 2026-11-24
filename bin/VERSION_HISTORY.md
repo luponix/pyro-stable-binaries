@@ -5,6 +5,65 @@ If you run into bugs or other issues let me know in the Overload discord @luponi
 VERSION HISTORY
 
 
+Pyro 0.3.2
+==========
+
+New & Changed Features
+
+  * Bots in the lobby
+      The match creator can now add and remove bots in the lobby.
+      ADD BOT opens a window to configure a new bot.
+      REMOVE next to a bot kicks it.
+      The chat commands /ADDBOT and /KICKBOT do the same both in the lobby
+      and during the match.
+
+  * Eight bot difficulties
+      TRAINEE, ROOKIE, HOTSHOT, ACE, INSANE, BRUTAL, MERCILESS and NIGHTMARE.
+      The number in front of the bots name indicates its tier.
+      Example: [7] BOT KOWALSKI. Higher is better.
+      From HOTSHOT onwards bots also pick up items during a fight. Higher
+      tiers prioritize items more aggressively and notice further away items.
+
+  * Bot presets
+      Bot setups can now be saved as presets for quick changes between
+      setups.
+
+  * Bot matches
+      A match with only bots left ends after 30 seconds.
+
+  * Frame limiter
+      Limits the framerate more precisely to the set target.
+      Raises the framerate limiters limit to 999 and adds an input field to
+      type the limit manually.
+
+  * Performance
+      Each additional player in a multiplayer match now costs less
+      performance.
+      Measured fps (olmod 0.5.14 / Pyro 0.3.1 / Pyro 0.3.2):
+           2 players:   834 /  1105 /  1106
+           3 players:   746 /  1077 /  1088
+           5 players:   601 /   982 /  1051
+           7 players:   545 /   911 /  1013
+           9 players:   469 /   788 /   912
+          11 players:   430 /   680 /   892
+          13 players:   382 /   611 /   782
+          16 players:   367 /   537 /   689
+
+  * Update screen
+      Slightly updated the formatting
+
+  * Server browser
+      The olmod version of a listed server updates on each refresh.
+
+Fixes
+
+  * Fixed a startup crash on pilot files that have no saved controllers.
+  * Fixed sound occlusion: every sound was started twice even with
+    occlusion off.
+  * Bots keep their team when the lobby updates.
+  * Restrict random bot weapons to only loadout available weapons.
+
+
 Pyro 0.3.1
 ==========
 
