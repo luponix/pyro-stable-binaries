@@ -5,6 +5,16 @@ If you run into bugs or other issues let me know in the Overload discord @luponi
 VERSION HISTORY
 
 
+Pyro 0.3.3
+==========
+
+Fixes
+
+  * Hotfix: Bots now resend their lobby ready in case of packet loss
+  * The update screen now scrolls one line per mouse wheel notch instead of
+    a full page.
+
+
 Pyro 0.3.2
 ==========
 
